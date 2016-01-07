@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}  INDEX ___ INDEX {% endblock %}
+
+{% block content %}
+    <h1>Hola mundo: {{ desde }}</h1>
+    <h2> hecho por {{ nombre }}</h2>
+    {% for d in datos %}
+        <h3>{{ d }}</h3>
+    {% endfor %}
+    <button class="btn btn-success" onclick="hola()" >Hola</button>
+    <script>
+        function hola() {
+            alert("Hola!!!");
+        }
+    </script>
+{% endblock %}
+
