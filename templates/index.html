@@ -5,6 +5,7 @@
 {% block content %}
     <h1>Hola mundo: {{ desde }}</h1>
     <h2> hecho por {{ nombre }}</h2>
+    <h3>Datos enviados desde la vista:</h3>
     {% for d in datos %}
         <h3>{{ d }}</h3>
     {% endfor %}
